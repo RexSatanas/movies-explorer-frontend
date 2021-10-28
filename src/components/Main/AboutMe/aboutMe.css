@@ -1,0 +1,44 @@
+.aboutMe {
+    min-width: 320px;
+    margin-bottom: 69px;
+    padding-top: 10px;
+}
+
+.aboutMe__img {
+    width: 284px;
+    margin: 0 0 36px 0;
+    height: 352px;
+    border-radius: 10px;
+}
+
+.aboutMe__title {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.04em;
+}
+
+.aboutMe__header-title {
+    margin-top: -40px;
+}
+
+.aboutMe__subtitle {
+    margin: 20px 0 0 0;
+}
+
+.aboutMe__links {
+    margin-top: 40px;
+}
+
+.aboutMe__link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 26px;
+    transition: opacity 0.9s linear 0.3s;
+}
+
+.aboutMe__link:hover {
+    opacity:60%;
+}
