@@ -7,9 +7,10 @@ function SearchForm() {
         <section className='search-form'>
             <form className='search-form__group'>
                 <div className='search-form__container'>
+                    <img className='search-form__img' alt='lupa'></img>
                     <input className='search-form__input' maxLength='30' type="text" placeholder="Фильм" required/>
                     <div className="search-form__box">
-                        <button className='search-form__button' type="submit"></button>
+                        <button className='search-form__button' type="submit">Найти</button>
                     </div>
                     <FilterCheckbox />
                 </div>

@@ -24,7 +24,7 @@
 @media screen and (min-width: 768px) {
     .movies-cardList__card {
         display: grid;
-        grid-template-columns: repeat(2, 339px);
+        grid-template-columns: repeat(1, 339px);
         row-gap: 31px;
         column-gap: 28px;
     }
@@ -32,15 +32,14 @@
 
 @media screen and (min-width: 1280px) {
     .movies-cardList__card {
-        grid-template-columns: repeat(3, 364px);
-        row-gap: 37px;
-        column-gap: 23px;
+        grid-template-columns: repeat(1, 1140px);
+        row-gap: 40px;
     }
 }
 
 .movies-cardList__button {
-    background-color: #202020;
-    color: white;
+    background-color: #F9F9F9;
+    color: rgb(0, 0, 0);
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -53,7 +52,7 @@
     border-radius: 3%;
     cursor: pointer;
     min-width: 238px;
-    border: 1px #424242 solid;
+    border: none;
 }
 
 @media screen and (min-width: 768px) {

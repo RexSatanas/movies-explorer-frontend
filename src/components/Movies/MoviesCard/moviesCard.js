@@ -7,16 +7,16 @@ function MoviesCard(props) {
     return (
         <section className='movies-card'>
             <div className='movies-card__container'>
-                <img className='movies-img' src={props.url} alt={props.title}></img>
                 <div className='movies-card__group'>
                     <h2 className='movies-card__title'>{props.title}</h2>
+                    <p className='movies-card__subtitle'>{props.subtitle}</p>
                     {pathname === "/movies" ? (
                         <button className='movies-card__like'></button>
                     ) : (
                         <button className='movies-card__delete'></button>
                     )}
                 </div>
-                <p className='movies-card__subtitle'>{props.subtitle}</p>
+                <img className='movies-img' src={props.url} alt={props.title}></img>
             </div>
         </section>
     )

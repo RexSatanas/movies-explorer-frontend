@@ -3,6 +3,7 @@
     justify-content: space-between;
     flex-direction: row-reverse;
     max-width: 147px;
+    max-height: 20px;
     margin: 30px auto 50px auto;
 }
 @media screen and (min-width: 768px) {
@@ -13,7 +14,7 @@
 }
 @media screen and (min-width: 1280px) {
     .filter-checkbox {
-        margin: 20px 0 47px 0;
+        margin: 28px 0 47px 0;
         max-width: 169px;
         flex-direction: initial;
     }
@@ -21,16 +22,18 @@
 @media screen and (min-width: 768px) {
     .filter__group {
         max-width: 708px;
-        margin: 0 auto;
+        margin: 8 auto;
     }
 }
 @media screen and (min-width: 1280px) {
     .filter__group {
         max-width: 1140px;
+        margin: 8 auto;
     }
 }
 .filter-checkbox__input {
     opacity: 0;
+    margin-top: 25px;
 }
 .filter-checkbox__title {
     color: #000000;
