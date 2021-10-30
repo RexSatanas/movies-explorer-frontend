@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import '../../index.css';
 import Main from "../Main/main";
 import Movies from "../Movies/movies";
+import SavedMovies from '../SavedMovies/savedMovies';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
                 <Movies />
             </Route>
             <Route path ='/saved-movies'>
+                <SavedMovies />
             </Route>
             <Route path ='/profile'>
             </Route>
