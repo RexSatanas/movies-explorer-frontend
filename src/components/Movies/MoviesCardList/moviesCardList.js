@@ -15,6 +15,7 @@ import image7 from '../../../images/movie7.jpg';
 function MoviesCardList(props) {
     return (
         <section className='movies-cardList'>
+            <div className='movies-cardList__div'>
             <div className='movies-cardList__container'>
                 <div className='movies-cardList__card'>
                     <MoviesCard url={image1} title='33 слова о дизайне' subtitle='1ч 47м'/>
@@ -27,7 +28,8 @@ function MoviesCardList(props) {
                 </div>
                 {/*<button className='movies-cardList__button'>Ещё</button>*/}
             </div>
-
+            </div>
+            
         </section>
     )
 }

@@ -43,7 +43,7 @@
 .movies-card__delete {
     width: 14px;
     height: 12px;
-    background-image: url("../../../images/likebuttonblank.png");
+    background-image: url("../../../images/deletebutton.svg");
     background-repeat: no-repeat;
     border: hidden;
     align-self: center;
