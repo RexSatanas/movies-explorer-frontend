@@ -168,6 +168,7 @@
 
 @media screen and (min-width: 768px) {
     .register__link {
+        margin-top: 2px;
         font-size: 14px;
         line-height: 14px;
         margin-left: 5px;

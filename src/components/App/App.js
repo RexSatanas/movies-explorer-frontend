@@ -6,7 +6,9 @@ import Main from "../Main/main";
 import Movies from "../Movies/movies";
 import SavedMovies from '../SavedMovies/savedMovies';
 import Profile from '../Profile/profile';
-import Register from '../Register/register'
+import Register from '../Register/register';
+import Login from '../Login/login';
+import NotFound from '../NotFound/notFound';
 
 
 function App() {
@@ -26,11 +28,13 @@ function App() {
                 <Profile />
             </Route>
             <Route path ='/signin'>
+                <Login />
             </Route>
             <Route path ='/signup'>
                 <Register />
             </Route>
             <Route path ='*'>
+                <NotFound />
             </Route>
         </Switch>
         </div>
