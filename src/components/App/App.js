@@ -5,6 +5,8 @@ import '../../index.css';
 import Main from "../Main/main";
 import Movies from "../Movies/movies";
 import SavedMovies from '../SavedMovies/savedMovies';
+import Profile from '../Profile/profile';
+import Register from '../Register/register'
 
 
 function App() {
@@ -21,10 +23,12 @@ function App() {
                 <SavedMovies />
             </Route>
             <Route path ='/profile'>
+                <Profile />
             </Route>
             <Route path ='/signin'>
             </Route>
             <Route path ='/signup'>
+                <Register />
             </Route>
             <Route path ='*'>
             </Route>
