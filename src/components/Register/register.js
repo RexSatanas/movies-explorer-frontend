@@ -4,8 +4,6 @@ import {Link} from "react-router-dom";
 import LogoHeader from "../Header/HeaderLogo/headerLogo";
 
 function Register() {
-    const [name, email] = React.useState('')
-    const [password] = React.useState('')
     return (
 
         <section className='register'>
@@ -16,18 +14,15 @@ function Register() {
                 <form className='register__form'>
                     <div className='register__box'>
                         <p className='register__input-name'>Имя</p>
-                        <input className='register__input' type='text' name='name'
-                               value={name || ''} placeholder='Денис' required/>
+                        <input className='register__input' type='text' name='name' placeholder='Денис' required/>
                     </div>
                     <div className='register__box'>
                         <p className='register__input-name'>E-mail</p>
-                        <input className='register__input' type='email' name='email'
-                               value={email || ''} placeholder='rexsatanas@yandex.ru' required/>
+                        <input className='register__input' type='email' name='email' placeholder='rexsatanas@yandex.ru' required/>
                     </div>
                     <div className='register__box'>
                         <p className='register__input-name'>Пароль</p>
-                        <input className='register__input' type='passwo' name='passwo'
-                               value={password} placeholder='**********' required/>
+                        <input className='register__input' type='password' name='passwo' placeholder='**********' required/>
                     </div>
                     <span className='register__subtitle'>Что-то пошло не так...</span>
                     <button className='register__button' type='submit'>Зарегистрироваться</button>

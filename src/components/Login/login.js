@@ -5,8 +5,6 @@ import LogoHeader from "../Header/HeaderLogo/headerLogo";
 
 
 function Login() {
-    const [email] = React.useState('')
-    const [password] = React.useState('')
     return (
         <section className='login'>
             <div className='register__container'>
@@ -15,13 +13,11 @@ function Login() {
                 <form className='register__form'>
                     <div className='register__box'>
                         <p className='register__input-name'>E-mail</p>
-                        <input className='register__input' type='email' name='email'
-                               value={email || ''} placeholder='rexsatanas@yandex.ru' required/>
+                        <input className='register__input' type='email' name='email' placeholder='test@test.ru' required/>
                     </div>
                     <div className='register__box'>
                         <p className='register__input-name'>Пароль</p>
-                        <input className='register__input' type='passw' name='passw'
-                               value={password} placeholder='*************' required/>
+                        <input className='register__input' type='password' name='passw' placeholder='*************' required/>
                     </div>
                     <button className='register__button' type='submit'>Войти</button>
                 </form>
