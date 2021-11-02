@@ -1,6 +1,6 @@
 .aboutProject {
     min-width: 320px;
-    margin-bottom: 100px;
+    margin: 110px auto 141px;
 }
 
 @media screen and (min-width: 768px) {
@@ -25,7 +25,7 @@
 @media screen and (min-width: 1280px) {
     .aboutProject__container {
         max-width: 1280px;
-        margin: 110px 70px;
+        margin: 110px auto 0;
     }
 }
 

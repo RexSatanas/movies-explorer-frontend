@@ -25,7 +25,7 @@
 }
 
 .search-form__img {
-    background-image: url(../../../images/iconLupa.png);
+    background-image: url('../../../images/iconlupa.svg');
     width: 34px;
     height: 34px;
     background-repeat: no-repeat;
@@ -53,12 +53,13 @@
 }
 
 .search-form__input_box {
-    margin-top: 23px;
+    margin-top: 20px;
     margin-left: 19px;
 }
 
 .search-form__input {
     margin-left: 10px;
+    margin-top: 5px;
     width: 252px;
     height: 22px;
     background-color: #ffff;

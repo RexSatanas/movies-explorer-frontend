@@ -8,7 +8,7 @@ function SearchForm() {
             <form className='search-form__group'>
                 <div className='search-form__container'>
                     <div className='search-form__input_box'>
-                        <img className='search-form__img' alt='lupa'></img>
+                    <img className='search-form__img' alt='lupa'/>
                         <input className='search-form__input' maxLength='30' type="text" placeholder="фильм" required/>
                     </div>
                     <div className="search-form__box">

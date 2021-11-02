@@ -1,0 +1,156 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+    background-color: #073042;
+}
+
+.header-style {
+    background-color: #ffffff;
+}
+
+
+@media screen and (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        min-width: 1024px;
+    }
+}
+
+.header__group {
+    height: 74px;
+    min-width: 256px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    .header__group {
+        min-width: 668px;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .header__group {
+        min-width: 1140px;
+    }
+}
+
+
+.header__container {
+    display: flex;
+}
+
+.header__button {
+    width: 49px;
+    height: 19px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 30px;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 3px;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+
+@media screen and (min-width: 768px) {
+    .header__button {
+        width: 76px;
+        height: 25px;
+        margin-left: 30px;
+        font-size: 12px;
+        padding-top: 10px;
+    }
+}
+
+.header__button-active {
+    background-color: #ffffff;
+    color: black;
+}
+
+
+.header__nav-link {
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #000000;
+    margin-right: 16px;
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .header__nav-link {
+        display: initial;
+        font-size: 13px;
+        line-height: 18px;
+        text-decoration: none;
+        color: #000000;
+        margin-right: 16px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header__box-link {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header__nav-link-style {
+        font-size: 13px;
+        line-height: 32px;
+        text-decoration: none;
+        color: #000000;
+        margin: 0;
+        border-radius: 20px;
+        background-color: #ffffff;
+        width: 100px;
+        text-align: center;
+        box-shadow: 0 0px 13px rgb(0 0 0 / 22%);
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .header__group-style {
+        min-width: 1027px;
+    }
+}
+
+.header__menu {
+    width: 40px;
+    height: 43px;
+    cursor: pointer;
+    background-image: url('../../images/burger.svg');
+    background-position: center;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .header__menu {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header__menu {
+        display: none;
+    }
+}
