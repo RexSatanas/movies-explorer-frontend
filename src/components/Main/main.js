@@ -1,4 +1,5 @@
 import React from 'react';
+import './main.css'
 import Promo from "./Promo/promo";
 import AboutProject from "./AboutProject/aboutProject";
 import Techs from "./Techs/techs";

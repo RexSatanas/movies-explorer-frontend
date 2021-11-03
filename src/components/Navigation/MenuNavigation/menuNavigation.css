@@ -14,7 +14,7 @@
     width: 320px;
     height: 100%;
     z-index: 1;
-    background-color:  #202020;
+    background-color:  #ffffff;
 }
 
 @media screen and (min-width: 768px) {
@@ -47,7 +47,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: #000000;
     text-decoration: none;
     padding-bottom: 24px;
 }
@@ -83,12 +83,13 @@
     text-align: center;
     margin: auto auto 0 auto;
     border-radius: 20px;
-    background-color: #313131;
+    background-color: #ffffff;
     width: 100px;
     height: 10px;
     font-size: 14px;
     line-height: 32px;
-    color: #FFFFFF;
+    color: #000000;
+    box-shadow: 0 0px 13px rgb(0 0 0 / 22%);
 }
 
 @media screen and (min-width: 768px) {

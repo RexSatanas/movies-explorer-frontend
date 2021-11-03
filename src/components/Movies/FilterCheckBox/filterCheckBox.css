@@ -19,10 +19,11 @@
         flex-direction: initial;
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
     .filter__group {
-        max-width: 708px;
-        margin: 8 auto;
+        max-width: 150px;
+        margin-right: 20px;
+        margin-top: 16px;
         display: flex;
     }
 }

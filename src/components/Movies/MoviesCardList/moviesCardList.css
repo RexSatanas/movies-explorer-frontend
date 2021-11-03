@@ -25,10 +25,10 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
     .movies-cardList__card {
         display: grid;
-        grid-template-columns: repeat(1, 339px);
+        grid-template-columns: repeat(1, 708px);
         row-gap: 31px;
         column-gap: 28px;
     }
