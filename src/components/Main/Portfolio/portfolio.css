@@ -1,7 +1,12 @@
 .portfolio {
-    min-width: 320px;
     padding: 0 12px 0;
     margin-bottom: 146px;
+}
+
+@media screen and (max-width: 320px) {
+    .portfolio {
+        max-width: 320px;
+    }
 }
 
 @media screen and (min-width: 768px) {

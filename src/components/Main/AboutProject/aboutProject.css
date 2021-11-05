@@ -1,6 +1,14 @@
 .aboutProject {
-    min-width: 320px;
+    
     margin: 110px 12px 141px;
+}
+
+@media screen and (min-width: 768px) {
+    .aboutProject {
+        max-width: 320px;
+        margin: 110px 0 141px;
+       padding-left: 12px;
+    }
 }
 
 @media screen and (min-width: 768px) {
