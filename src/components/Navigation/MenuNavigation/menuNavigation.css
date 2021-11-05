@@ -57,6 +57,11 @@
  text-decoration: underline;
 }
 
+.menu-navigation__link-acc {
+    margin-top: 9px;
+    margin-left: 7px;
+}
+
 .menu-navigation__close {
     background-image: url("../../../images/Group.svg");
     width: 22px;
@@ -106,13 +111,37 @@
     color: #000000;
 }
 
+.account__style {
+    display: flex;
+}
+
+.header__profile-round {
+    width: 26px;
+    height: 26px;
+    margin-top: 7px;
+    margin-left: 7px;
+    border-radius: 50%;
+    background-color: #F9F9F9;
+}
+
+@media screen and (min-width: 1280px) {
+    .header__profile-round {
+        margin-top: 2px;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .header__profile-round {
+        display: none;
+    }
+}
+
 .header__profile-pic{
-    background-image: url('../../../images/profbutton.svg');
-    width: 12px;
-    height: 13px;
-    margin-left: 6px;
-    margin-top: 11px;
-    padding-top: 3px;
-    border: none;
+    width: 10.38px;
+    height: 10.36px;
+    margin-top: 7px;
+    margin-left: 7px;
+    background-image: url('../../../images/profilepic.svg');
     background-repeat: no-repeat;
 }

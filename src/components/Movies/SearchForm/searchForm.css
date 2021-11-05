@@ -22,6 +22,7 @@
     margin: auto;
     box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.08);
     border-radius: 9px;
+
 }
 
 @media screen and (min-width: 767px) and (max-width: 1279px) {
@@ -29,13 +30,12 @@
         max-width: 708px;
     }
 }
-
-.search-form__img {
-    background-image: url('../../../images/iconlupa.svg');
-    width: 34px;
-    height: 34px;
+.search-form__image-box {
+    width: 15px;
+    height: 15px;
+    margin-top: 11px;
+    background-image: url('../../../images/lupa.svg');
     background-repeat: no-repeat;
-    border: none;
 }
 
 .search-form__container {
@@ -44,6 +44,7 @@
     margin: 70px auto 80px;
     display: flex;
     justify-content: space-between;
+    background-color: #FDFDFD;
 }
 
 @media screen and (min-width: 768px) {
@@ -60,6 +61,7 @@
 }
 
 .search-form__input_box {
+    display: flex;
     margin-top: 20px;
     margin-left: 19px;
 }
@@ -75,7 +77,7 @@
     margin-top: 5px;
     width: 252px;
     height: 22px;
-    background-color: #ffff;
+    background-color: #FDFDFD;
     border: 0;
 }
 
@@ -99,6 +101,7 @@
 
 .search-form__box {
     margin-top: 20px;
+    margin-left: 30px;
     width: 80px;
     height: 34px;
     border-right: #CBCBCB solid 1px ;

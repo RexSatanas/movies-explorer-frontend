@@ -14,7 +14,9 @@ function MenuNavigation(props) {
                     <Link to='/saved-movies' className='menu-navigation__link'>Сохраненные Фильмы</Link>
                     <div className='menu-navigation__link menu-navigation__link-style account__style'>
                     <Link to='/profile' className='menu-navigation__link-acc'>Аккаунт</Link>
-                    <img className='header__profile-pic'/>
+                    <div className='header__profile-round'>
+                            <div className='header__profile-pic'></div>
+                        </div>
                     </div>
                     
                 </div>

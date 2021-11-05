@@ -109,10 +109,12 @@
     .header__nav-link {
         display: initial;
         font-size: 13px;
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 5px;
         line-height: 18px;
         text-decoration: none;
         color: #000000;
-        margin-right: 16px;
     }
 }
 
@@ -124,6 +126,7 @@
 
 @media screen and (min-width: 1280px) {
     .header__nav-link-style {
+        display: flex;
         font-size: 13px;
         line-height: 32px;
         text-decoration: none;
@@ -132,6 +135,7 @@
         border-radius: 20px;
         background-color: #ffffff;
         width: 100px;
+        height: 30px;
         text-align: center;
         box-shadow: 0 0px 13px rgb(0 0 0 / 22%);
     }
