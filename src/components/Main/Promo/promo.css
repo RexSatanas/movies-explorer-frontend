@@ -74,7 +74,7 @@ margin-bottom: 30px;
 
 .promo__title {
     margin: 53px 0 -27px 0;
-    width: 284px;
+    min-width: 284px;
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
@@ -106,7 +106,7 @@ margin-bottom: 30px;
 }
 
 .promo__subtitle {
-    width: 260px;
+    min-width: 260px;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;

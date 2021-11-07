@@ -1,3 +1,9 @@
+@media screen and (max-width: 320px) {
+    .filter__group {
+        margin-top: 30px;
+        margin-left: 80px;        
+    }
+}
 .filter-checkbox {
     display: flex;
     justify-content: space-between;
@@ -17,6 +23,11 @@
         margin: 0;
         max-width: 169px;
         flex-direction: initial;
+    }
+}
+@media screen and (max-width: 320px) {
+    .filter__group {
+        display: flex;
     }
 }
 @media screen and (min-width: 767px) {
@@ -47,6 +58,11 @@
     line-height: 18px;
     margin-right: 2px;
     margin-top: 12px;
+}
+@media screen and (max-width: 320px) {
+    .filter-checkbox__title {
+        margin-left: 20px;
+    }
 }
 @media screen and (min-width: 768px) {
     .filter-checkbox__title {

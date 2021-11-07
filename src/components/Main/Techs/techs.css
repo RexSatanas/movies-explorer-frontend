@@ -9,6 +9,13 @@
     background-color: #F5F5F5;
     padding: 0 0 100px;
 }
+
+@media screen and (min-width: 1279px) {
+    .techs__container {
+        min-width: 1140px;
+    }
+}
+
 .techs__header-title {
     margin: -39px 0 0 0;
 }
