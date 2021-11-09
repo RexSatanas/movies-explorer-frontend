@@ -82,6 +82,12 @@
     border: 0;
 }
 
+@media screen and (min-width: 321px) and (max-width: 475px) {
+    .search-form__input {
+        width: 130px;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .search-form__input {
         width: 175px;
@@ -119,6 +125,12 @@
         width: 60px;
         border-right: none;
         margin-right: 7px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 475px) {
+    .search-form__box {
+        border-right: none;
     }
 }
 
