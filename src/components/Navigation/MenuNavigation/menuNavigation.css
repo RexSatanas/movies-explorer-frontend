@@ -131,12 +131,6 @@
     }
 }
 
-@media screen and (max-width: 1279px) {
-    .header__profile-round {
-        display: none;
-    }
-}
-
 .header__profile-pic{
     width: 10.38px;
     height: 10.36px;

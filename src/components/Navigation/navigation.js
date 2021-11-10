@@ -23,7 +23,7 @@ function Navigation(props) {
                     </div>
                     <div className='header__nav-link-style'>
                         <Link to='/profile' className='header__nav-link'>Аккаунт</Link>
-                        <div className='header__profile-round'>
+                        <div className='header__profile-round-h'>
                             <div className='header__profile-pic'></div>
                         </div>
                     </div>
