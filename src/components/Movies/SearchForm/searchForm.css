@@ -31,9 +31,9 @@
 
 }
 
-@media screen and (min-width: 475px) and (max-width: 752px) {
+@media screen and (min-width: 475px) and (max-width: 766px) {
     .search-form__group {
-        max-width: 612px;
+        max-width: 620px;
     }
 }
 
