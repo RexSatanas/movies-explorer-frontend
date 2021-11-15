@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './searchForm.css';
 import FilterCheckbox from "../FilterCheckBox/filterCheckBox";
+import { useForm } from '../../Validation/UseForm';
 
+import { getAllMovies } from '../../utils/MoviesApi';
+
+import { complexMoviesFilter } from '../../utils/movies-filter';
 function SearchForm() {
     return (
         <section className='search-form'>
