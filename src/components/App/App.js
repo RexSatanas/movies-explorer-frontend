@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { Route, Switch } from "react-router-dom";
-import api from '../../utils/api';
+import React, { useState, useEffect } from 'react';
+import { Route, Switch, useHistory } from "react-router-dom";
+import api from '../../utils/Api';
 import '../../index.css';
 import ProtectedRoute from "../ProtectedRoute/protectedRoute";
 import ProtectedRouteLoggedIn from "../ProtectedRouteLoggedIn/ProtectedRouteLoggedIn";
@@ -13,6 +13,10 @@ import Login from '../Login/login';
 import NotFound from '../NotFound/notFound';
 import Header from '../Header/header'
 import UserAlert from "../UserAlert/userAlert"
+
+import * as auth from "../../utils/auth";
+
+import {CurrentUserContext} from '../Context/CurrentUserContext';
 
 function App(props) {
   const [currentUser, setCurrentUser] = useState({});
@@ -202,36 +206,64 @@ function App(props) {
   }
 
     return (
-        <div className="page">
+      <CurrentUserContext.Provider value={currentUser}>
+      <div className="page">
+        <UserAlert message={ alertMessage }/>
         <Switch>
-            <Route exact path ='/'>
-                <Header  loggedIn={loggedIn}/>
-                <Main />
-            </Route>
-            <Route  path ='/movies'>
-                <Header  loggedIn={loggedIn}/>
-                <Movies />
-            </Route>
-            <Route path ='/saved-movies'>
-                <Header  loggedIn={loggedIn}/>
-                <SavedMovies />
-            </Route>
-            <Route path ='/profile'>
-                <Header  loggedIn={loggedIn}/>
-                <Profile />
-            </Route>
-            <Route path ='/signin'>
-                <Login />
-            </Route>
-            <Route path ='/signup'>
-                <Register />
-            </Route>
-            <Route path ='*'>
-                <NotFound />
-            </Route>
+          <Route exact path='/'>
+            <Header  loggedIn={loggedIn} userEmail={userEmail} onSignOut={signOut}/>
+            <Main />
+          </Route>
+          <ProtectedRoute path='/movies' loggedIn={ loggedIn }>
+            <Header  loggedIn={loggedIn}/>
+            <Movies
+              updateLikedMoviesIds={updateLikedMoviesIds}
+              likedMoviesIds={ likedMoviesIds }
+              searchProblemMessage={ searchProblemMessage }
+              setSearchProblemMessage={ setSearchProblemMessage }
+            />
+          </ProtectedRoute>
+          <ProtectedRoute loggedIn={ loggedIn } path='/saved-movies'>
+            <Header loggedIn={loggedIn} />
+            <SavedMovies
+              likedMoviesIds={ likedMoviesIds }
+              updateLikedMoviesIds={updateLikedMoviesIds}
+              searchProblemMessage={ searchProblemMessage }
+              setSearchProblemMessage={ setSearchProblemMessage }
+            />
+          </ProtectedRoute>
+          <ProtectedRoute path='/profile' loggedIn={loggedIn}>
+            <Header  loggedIn={loggedIn}/>
+            <Profile
+              handleUpdateUser={handleUpdateUser}
+              formError={ formError }
+              signOut={ signOut }
+              clearFormError={clearFormError}
+              profileUpdateMessage={profileUpdateMessage}
+              setProfileUpdateMessage={ setProfileUpdateMessage }
+              // currentUser={ currentUser }
+            />
+          </ProtectedRoute>
+          <ProtectedRouteLoggedIn path='/signin' loggedIn={loggedIn}>
+            <Login onLogin={login}
+                   formError={ formError }
+                   clearFormError={clearFormError}
+            />
+          </ProtectedRouteLoggedIn>
+          <ProtectedRouteLoggedIn path='/signup' loggedIn={loggedIn}>
+            <Register
+              onRegister={register}
+              formError={ formError }
+              clearFormError={clearFormError}
+            />
+          </ProtectedRouteLoggedIn>
+          <Route path='*'>
+            <NotFound/>
+          </Route>
         </Switch>
-        </div>
-    );
+      </div>
+    </CurrentUserContext.Provider>
+  );
 }
 
 export default App;

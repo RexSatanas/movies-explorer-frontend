@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import SearchForm from "./SearchForm/searchForm";
 import Preloader from "./Preloader/preloader";
-import MoviesCardListWrapper from "../MoviesCardListWrapper/MoviesCardListWrapper";
+import MoviesCardListWrapper from "./MoviesCardListWrapper/moviesCardListWrapper";
 import Footer from "../Footer/footer";
 import { getParamsByScreenWidth } from '../../utils/getParamsByScreenWidth';
 

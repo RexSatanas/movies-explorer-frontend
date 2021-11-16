@@ -2,7 +2,7 @@ import React from 'react';
 import '../Register/register.css';
 import {Link} from "react-router-dom";
 import LogoHeader from "../Header/HeaderLogo/headerLogo";
-import { useFormWithValidation } from '../../validation/useFrom';
+import { useFormWithValidation } from '../../validation/useForm';
 
 
 function Login(props) {
