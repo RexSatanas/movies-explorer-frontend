@@ -1,5 +1,5 @@
-export const BASE_URL = 'api.mestodm.students.nomoredomains.monster'
-
+//export const BASE_URL = 'api.mestodm.students.nomoredomains.monster'
+export const BASE_URL = 'http://localhost:3000'
 
 
 const checkRes = (res) => {
@@ -9,7 +9,7 @@ const checkRes = (res) => {
 /**
  * Регистрация нового пользователя
  * */
-export const register = (name,email,password) => {
+export const register = (name, email, password) => {
     const requestResultPromise = fetch(`${BASE_URL}/signup`, {
         method: 'POST',
         headers: {
