@@ -64,7 +64,7 @@ class Api {
           'Accept': 'application/json',
           'Content-type': 'application/json',
           Authorization: `Bearer ${token}`
-        },
+        }, 
   
         body: JSON.stringify({
           country: movie.country || 'данные отсутствуют',
@@ -126,7 +126,8 @@ class Api {
   }
   
   const api = new Api({
-    url: `api.mestodm.students.nomoredomains.monster`,
+    url: `http://localhost:3000`,
+    //url: `api.mestodm.students.nomoredomains.monster`,
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
