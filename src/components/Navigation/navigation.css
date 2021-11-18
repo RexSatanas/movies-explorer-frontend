@@ -1,0 +1,21 @@
+.header__profile-round-h {
+    width: 26px;
+    height: 26px;
+    margin-top: 7px;
+    margin-left: 7px;
+    border-radius: 50%;
+    background-color: #F9F9F9;
+}
+
+@media screen and (min-width: 1280px) {
+    .header__profile-round-h {
+        margin-top: 2px;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .header__profile-round-h {
+        display: none;
+    }
+}
