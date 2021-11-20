@@ -127,7 +127,7 @@ class Api {
   
   const api = new Api({
     //url: `http://localhost:3000`,
-    url: `api.stmovies.nomoredomains.monster`,
+    url: `https://api.stmovies.nomoredomains.monster`,
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'

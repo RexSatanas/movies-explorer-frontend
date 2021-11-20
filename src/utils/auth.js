@@ -1,4 +1,4 @@
-export const BASE_URL = 'api.stmovies.nomoredomains.monster'
+export const BASE_URL = 'https://api.stmovies.nomoredomains.monster'
 //export const BASE_URL = 'http://localhost:3000'
 
 
