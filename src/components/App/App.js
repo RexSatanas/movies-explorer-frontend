@@ -20,14 +20,20 @@ import {CurrentUserContext} from '../Context/CurrentUserContext';
 
 function App(props) {
   const [currentUser, setCurrentUser] = useState({});
-  //Авторизация
+
   const [loggedIn, setLoggedIn] = useState(true);
   const [userEmail, setUserEmail] = useState('');
+
   const [formError, setFormError] = useState({ registerError: false, errorMessage: "" });
+
   const [likedMoviesIds, setLikedMoviesIds] = useState([]);
+
   const [searchProblemMessage, setSearchProblemMessage] = useState('');
+
   const [likedMoviesByServer, setLikedMoviesByServer] = useState([]);
+
   const [profileUpdateMessage, setProfileUpdateMessage] = useState('');
+
   const [alertMessage, setAlertMessage] = useState('');
 
   const setAlertMessageWraper = (message) => {
@@ -119,7 +125,7 @@ function App(props) {
         data.json().then((body) => {
           setLoggedIn(true);
           setUserEmail(body.email);
-          //history.push('/movies');
+          // history.push('/movies');
         })
       })
       .catch((err) => {
