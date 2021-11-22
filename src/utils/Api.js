@@ -29,9 +29,6 @@ class Api {
         })
       })
         .then(this._checkRes)
-        .catch(() => {
-          return Promise.reject()
-      })
     }
   
     getAllLikedMovie(token) {

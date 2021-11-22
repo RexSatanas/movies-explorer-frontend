@@ -65,7 +65,7 @@ function Profile(props) {
                                value={values.name || ''}
                                placeholder={currentUser.name}
                                onChange={changeName}
-                               required/>
+                               required></input>
                     </div>
                     {
                         errors.name && (
@@ -76,14 +76,14 @@ function Profile(props) {
                     }
                     <div className='profile__box profile__box-style'>
                         <p className='profile__input-name'>E-mail</p>
-                        <input className='profile__input' type='email' name='email'
+                        <input className='profile__input'
                                type="email"
                                name="email"
-                               value={values.email || ''}
+                               value={values.email}
                                placeholder={currentUser.email}
                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                onChange={changeEmail}
-                               required/>
+                               required></input>
                     </div>
                     {
                         errors.email && (

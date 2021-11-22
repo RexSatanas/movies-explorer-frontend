@@ -119,7 +119,7 @@ function App(props) {
         data.json().then((body) => {
           setLoggedIn(true);
           setUserEmail(body.email);
-          // history.push('/movies');
+          //history.push('/movies');
         })
       })
       .catch((err) => {

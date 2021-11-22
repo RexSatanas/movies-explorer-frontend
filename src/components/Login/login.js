@@ -24,19 +24,19 @@ function Login(props) {
                 <LogoHeader/>
                 <h1 className='register__title'>Добро пожаловать!</h1>
                 <form className='register__form'
-                onSubmit={handleSubmit}
-                type="search"
+                    onSubmit={handleSubmit}
+                    type="search"
                 >
                     <div className='register__box'>
                         <p className='register__input-name'>E-mail</p>
                         <input className='register__input' 
-                        type='email' 
-                        name='email' 
-                        //placeholder='test@test.ru' 
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                        value={values.email || ''}
-                        onChange={handleChange}
-                        required/>
+                            type='email' 
+                            name='email' 
+                            //placeholder='test@test.ru' 
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                            value={values.email || ''}
+                            onChange={handleChange}
+                            required/>
                     </div>
                     <div className='register__box'>
                         <p className='register__input-name'>Пароль</p>
