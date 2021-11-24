@@ -49,9 +49,6 @@ class Api {
   
           return Promise.reject();
         })
-        .catch((err) => {
-          return Promise.reject();
-        });
     }
   
     saveLikedMovie(movie, token) {
@@ -86,9 +83,6 @@ class Api {
   
           return Promise.reject();
         })
-        .catch((err) => {
-          return Promise.reject();
-        });
     }
   
     deleteLikedMovie(movieId, token) {
@@ -109,9 +103,6 @@ class Api {
   
           return Promise.reject();
         })
-        .catch((err) => {
-          return Promise.reject();
-        });
     }
   
     _checkRes(res) {
