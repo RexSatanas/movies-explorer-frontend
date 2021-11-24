@@ -62,8 +62,8 @@ function Profile(props) {
                         <input className='profile__input' 
                                type="text"
                                name="name"
-                               value={values.name || ''}
-                               placeholder={currentUser.name}
+                               value={values.name || currentUser.name}
+                               //placeholder={currentUser.name}
                                onChange={changeName}
                                required></input>
                     </div>
@@ -75,12 +75,12 @@ function Profile(props) {
                         )
                     }
                     <div className='profile__box profile__box-style'>
-                        <p className='profile__input-name'>E-mail</p>
+                        <p className='profile__input-name'>Email</p>
                         <input className='profile__input'
                                type="email"
                                name="email"
-                               value={values.email || ''}
-                               placeholder={currentUser.email}
+                               value={values.email || currentUser.email}
+                               //placeholder={currentUser.email}
                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                onChange={changeEmail}
                                required></input>
