@@ -2,16 +2,19 @@ import React from 'react';
 import './filterCheckBox.css';
 
 function FilterCheckbox({ shortMoviesFilter, setShortMoviesFilter }) {
+
     return (
         <div className='filter__box'>
                 <div className='filter__group'>
                 <label className='filter-checkbox__container'>
                     <input 
+                        id='fluency'
                         className='filter-checkbox__input'
                         type='checkbox'
                         value={ shortMoviesFilter }
                         checked={ shortMoviesFilter }
                         onChange={ () => { setShortMoviesFilter(!shortMoviesFilter) }}
+                        onclick="checkFluency()"
                         />
                     <span className='filter-checkbox__slider'></span>
                 </label>
