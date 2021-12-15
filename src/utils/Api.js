@@ -42,12 +42,7 @@ class Api {
       });
   
       return pr
-        .then((data) => {
-          if (data.ok) {
-            return data.json();
-          }
-          return Promise.reject();
-        })
+      .then(this._checkRes)
     }
   
     saveLikedMovie(movie, token) {
@@ -75,13 +70,7 @@ class Api {
       });
   
       return pr
-        .then((data) => {
-          if (data.ok) {
-            return data.json();
-          }
-  
-          return Promise.reject();
-        })
+      .then(this._checkRes)
     }
   
     deleteLikedMovie(movieId, token) {
@@ -95,13 +84,7 @@ class Api {
       });
   
       return pr
-        .then((data) => {
-          if (data.ok) {
-            return data.json();
-          }
-  
-          return Promise.reject();
-        })
+      .then(this._checkRes)
     }
   
     _checkRes(res) {
